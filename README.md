@@ -30,6 +30,13 @@
      
  2. Disadvantage is that i didn't get to show how to solve some of the given problems like handling message duplicates and out of order messages.
  3. Disadvantage that the coding style will reflect the used sample more than my own code style.
+ 4. Accomplishments
+     1. exaple Api tests added
+     2. example tests added
+     3. Swagger UI is functional
+     4. Events are stored in EventStoreDb
+     5. Projections stored in PostGres
+     6. rocket history end point implemented 
 
 Sample is showing the typical flow of the Event Sourcing app with [EventStoreDB](https://developers.eventstore.com).
 
