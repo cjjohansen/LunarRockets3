@@ -13,6 +13,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{05FA325E-387E-4297-9AAA-8BBDFBBB9B13}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
+		TestSnippets.json = TestSnippets.json
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Rockets", "Rockets", "{B5FB1F05-E59E-4907-A99C-801EBF747D28}"

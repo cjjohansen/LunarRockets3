@@ -77,7 +77,7 @@ public class RocketsController: Controller
                         );
                     break;
                 }
-            case "RockeSpeedIncreased":
+            case "RocketSpeedIncreased":
                 {
                     long speedIncrement = request.Message.by;
 
@@ -87,7 +87,7 @@ public class RocketsController: Controller
                         );
                     break;
                 }
-            case "RockeSpeedDecreased":
+            case "RocketSpeedDecreased":
                 {
                     long speedDecrement = request.Message.by;
 

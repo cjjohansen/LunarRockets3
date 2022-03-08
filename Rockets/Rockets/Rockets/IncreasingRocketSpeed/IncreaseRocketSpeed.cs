@@ -42,14 +42,18 @@ internal class HandleIncreaseRocketSpeed :
     {
         var (rocketId, speedIncrement) = command;
 
-        await scope.Do((expectedRevision, eventMetadata) =>
-            rocketRepository.GetAndUpdate(
+        await scope.Do((expectedRevision, eventMetadata) => {
+
+
+            return rocketRepository.GetAndUpdate(
                 rocketId,
-                rocket => rocket.IncreaseRocketSpeed( speedIncrement),
+                rocket => rocket.IncreaseRocketSpeed(speedIncrement),
                 expectedRevision,
                 eventMetadata,
                 cancellationToken
-            )
+            );
+            
+            }
         );
 
         return Unit.Value;
