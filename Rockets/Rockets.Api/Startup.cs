@@ -43,7 +43,7 @@ public class Startup
             })
             .AddCoreServices()
             .AddEventStoreDBSubscriptionToAll()
-            .AddCartsModule(config)
+            .AddRocketsModule(config)
             .AddCorrelationIdMiddleware()
             .AddOptimisticConcurrencyMiddleware(
                 sp => sp.GetRequiredService<EventStoreDBExpectedStreamRevisionProvider>().TrySet,

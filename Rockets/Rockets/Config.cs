@@ -8,7 +8,7 @@ namespace Rockets;
 
 public static class Config
 {
-    public static IServiceCollection AddCartsModule(this IServiceCollection services, IConfiguration config) =>
+    public static IServiceCollection AddRocketsModule(this IServiceCollection services, IConfiguration config) =>
         services
             // Document Part used for projections
             .AddMarten(config, configKey: "ReadModel_Marten")
