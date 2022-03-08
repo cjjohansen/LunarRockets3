@@ -2,6 +2,10 @@
 
 # 🪐 Backend Engineer Challenge: Rockets - Solution 🚀
 
+
+## Notice
+1. Rockets.exe will probably not work with this implementation. I could probably fix this quite easily. But don't waste time trying to run it.  
+
 ## Initial thoughts and steps 👋
 
 1. Make sure that .exe works. Done! (Needs to be executed from command prompt --help works)
@@ -60,6 +64,17 @@ Sample is showing the typical flow of the Event Sourcing app with [EventStoreDB]
         - To connect to server Use host: `postgres`, user: `postgres`, password: `Password12!`
 4. Open, build and run `LunarRockets.sln` solution.
     - Swagger should be available at: http://localhost:5000/index.html
+5.  The example uses optimistic concurrency checking, so the rockets.exe might not work out of the box since it shold send expected version in if-match request header. 
+I Didnt have time to fix it. I Could offcause get the expected version send from the meta-data part.
+6. It makes sense to test using swagger. Use json snippets from the TestSnippets.json file
+7. After sending initial LaunchRocket message, notice the Etag W/"0" in the response headers. 
+8. Send subsequent messages but remember to set W/"0" in the if match header input field. And W/"1" and so on..
+9. if You want to test with Rockets.exe any way; you should use
+        
+   > rockets.exe launch "http://localhost:5000/api/rockets" --message-delay=500ms --concurrency-level=1 
+
+
+
 
 
 

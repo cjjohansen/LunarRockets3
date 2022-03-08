@@ -1,0 +1,70 @@
+[
+  {
+    "metaData": {
+      "channel": "3fa85f64-5717-4562-b3fc-2c963f66afa4",
+      "messageNumber": 0,
+      "messageTime": "2022-03-08T13:20:17.848Z",
+      "messageType": "RocketLaunched"
+    },
+    "message": {
+      "type": "Falcon-11",
+      "mission": "Artemis",
+      "launchSpeed": "35000"
+    }
+  },
+  {
+    "metaData": {
+      "channel": "3fa85f64-5717-4562-b3fc-2c963f66afa4",
+      "messageNumber": 1,
+      "messageTime": "2022-03-08T13:25:17.848Z",
+      "messageType": "RocketSpeedIncreased"
+    },
+    "message": {
+      "by": 8000
+    }
+  },
+  {
+    "metaData": {
+      "channel": "3fa85f64-5717-4562-b3fc-2c963f66afa4",
+      "messageNumber": 2,
+      "messageTime": "2022-03-08T15:25:17.848Z",
+      "messageType": "RocketSpeedDecreased"
+    },
+    "message": {
+      "by": 2000
+    }
+  },
+  {
+    "metaData": {
+      "channel": "3fa85f64-5717-4562-b3fc-2c963f66afa4",
+      "messageNumber": 3,
+      "messageTime": "2022-03-08T15:25:17.848Z",
+      "messageType": "RocketMissionChanged"
+    },
+    "message": {
+      "newMission": "Andromeda"
+    }
+  },
+  {
+    "metaData": {
+      "channel": "3fa85f64-5717-4562-b3fc-2c963f66afa4",
+      "messageNumber": 4,
+      "messageTime": "2022-03-08T13:25:17.848Z",
+      "messageType": "RocketSpeedIncreased"
+    },
+    "message": {
+      "by": 20000
+    }
+  },
+  {
+    "metaData": {
+      "channel": "3fa85f64-5717-4562-b3fc-2c963f66afa4",
+      "messageNumber": 5,
+      "messageTime": "2022-03-08T15:25:17.848Z",
+      "messageType": "RocketExploaded"
+    },
+    "message": {
+      "reason": "To fast..."
+    }
+  }
+]
